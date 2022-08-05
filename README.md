@@ -1,2 +1,2 @@
 # printf
-A C function that printed formatted out to stdout
+A C function that prints formatted out to stdout
