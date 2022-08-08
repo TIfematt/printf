@@ -17,8 +17,14 @@ int _printf(const char *format, ...)
 
 	while (format[i] != '\0')
 	{
-		if (_putchar(format[i]) != -1)
-			n_displayed += 1;
+		if (_putchar(format[i]) != '%')
+			_putchar(format[i]);
+		else
+		{
+			if (format[i+1] == 'c')
+				_putchar(va_args(args, int));
+		}
+	
 		i++;
 	}
 
