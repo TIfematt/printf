@@ -34,5 +34,6 @@ int _putchar(char c);
 int _printf(const char * format, ...);
 int print_rot13(va_list l, flags_t *f);
 int print_rev(va_list l, flags_t *f);
+int _puts(char *str);
 
 #endif /* MAIN_H */
